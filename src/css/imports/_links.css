@@ -1,21 +1,24 @@
-.link {
+a {
   text-decoration: none;
   transition: var(--hover-transition);
-  color: inherit;
+  color: var(--gray);
 }
 
-.link:link,
-.link:visited {
+a:link,
+a:visited {
   transition: color .15s ease-in;
 }
-.link:hover   {
-  transition: color .15s ease-in;
-  text-decoration: underline;
-}
-.link:active  {
+
+a:hover {
+  background-color: var(--highlight);
   transition: color .15s ease-in;
 }
-.link:focus   {
+
+a:active {
+  transition: color .15s ease-in;
+}
+
+a:focus {
   transition: color .15s ease-in;
   outline: 1px dotted currentColor;
 }

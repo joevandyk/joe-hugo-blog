@@ -1,31 +1,37 @@
 .cms {
 
 	/* Headings */
-	& h1, & h2, & h3, & h4, & h5, & h6 {
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
 		font-weight: var(--bold-font-weight);
 		line-height: 1.25;
-    margin-bottom: var(--spacing-small);
-  }
+		margin-bottom: var(--spacing-small);
+	}
 
-  & h1 {
-    font-size: 2.25rem;
-  }
+	& h1 {
+		font-size: 2.25rem;
+	}
 
-  & h2 {
-    font-size: 1.5rem;
-  }
+	& h2 {
+		font-size: 1.5rem;
+	}
 
-  & h3 {
-    font-size: 1.25rem;
-  }
+	& h3 {
+		font-size: 1.25rem;
+	}
 
-  & h4 {
-    font-size: 1rem;;
-  }
+	& h4 {
+		font-size: 1rem;
+		;
+	}
 
-  & h5 {
-    font-size: .875rem;
-  }
+	& h5 {
+		font-size: .875rem;
+	}
 
 	/* Images */
 	& img {
@@ -40,6 +46,7 @@
 	& a {
 		color: var(--primary);
 		transition: var(--hover-transition);
+
 		&:hover {
 			background-color: var(--highlight);
 			color: var(--black);
@@ -47,21 +54,26 @@
 	}
 
 	/* Lists */
-	& ul, & ol, & li {
+	& ul,
+	& ol,
+	& li {
 		position: relative;
 	}
 
-	& ul, & ol {
+	& ul,
+	& ol {
 		margin-bottom: var(--spacing-medium);
 	}
 
-	& ul ul, & ol ol {
+	& ul ul,
+	& ol ol {
 		padding-left: var(--spacing-small);
 	}
 
 	& ul {
 		margin-left: 1.33rem;
-		& >li:before {
+
+		&>li:before {
 			content: '✱';
 			left: -1.33rem;
 			position: absolute;
@@ -73,30 +85,31 @@
 		list-style: none;
 		margin-left: var(--spacing-medium);
 		counter-reset: i 0;
-    & >li:before {
-      font-weight: 800;
-      left: var(--spacing-medium);
-      margin-right: 1.33rem;
-      position: relative;
-      height: 100%;
-      content: counter(i);
-      counter-increment: i;
-      color: var(--primary);
-    }
+
+		&>li:before {
+			font-weight: 800;
+			left: var(--spacing-medium);
+			margin-right: 1.33rem;
+			position: relative;
+			height: 100%;
+			content: counter(i);
+			counter-increment: i;
+			color: var(--primary);
+		}
 	}
 
-  /* Blockquotes */
-  & blockquote {
-    background-color: var(--grey-1);
-    display: block;
-    border-radius: var(--border-radius);
-    padding: var(--spacing-medium);
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 1.25rem;;
-    margin-bottom: var(--spacing-medium);
-    & p {
-      margin: 0;
-    }
-  }
+	/* Blockquotes */
+	& blockquote {
+		background-color: var(--grey-1);
+		display: block;
+		border-radius: var(--border-radius);
+		padding: var(--spacing-medium);
+		color: var(--primary);
+		font-weight: 700;
+		margin-bottom: var(--spacing-medium);
+
+		& p {
+			margin: 0;
+		}
+	}
 }
